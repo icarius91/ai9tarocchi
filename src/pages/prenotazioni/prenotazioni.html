@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      ai 9 Tarocchi
+    </ion-title>
+  
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content >
+<ion-item>
+    <ion-label>Prenotazioni effettuate</ion-label>
+    <ion-select [(ngModel)]="prenotazioni" (ionChange)="prenotato(prenotazioni)">
+      <ion-option *ngFor="let data of date" [value]=data>{{data.data}}</ion-option>
+      
+    </ion-select>
+  </ion-item>
+  <ion-card>
+  <ion-item></ion-item>
+  </ion-card>
+  <ion-list>
+  <ion-item></ion-item>
+  </ion-list>
+<ion-refresher  (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      refreshingSpinner="dots"
+      refreshingText="Refreshing...">
+    </ion-refresher-content>
+  </ion-refresher>
+<ion-item *ngIf="connection==false">
+
+ <ion-label text-center><br>Nessuna connessione a Internet<br>Trascina verso il basso per ricaricare</ion-label>
+</ion-item>
+</ion-content>

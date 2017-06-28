@@ -1,0 +1,66 @@
+
+#sfondo
+{
+    background-image:url("../assets/img/ristorante.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+  
+   
+}
+.menu
+{
+    position: absolute;
+    bottom: 0%;
+    padding: 0px;
+}
+ion-title
+{
+    text-align: center;
+    
+}   
+ion-navbar
+{
+    opacity: 0.7;
+     
+}
+.menuscelta
+{
+    background-color:rgba(255,255,255,0.7);
+   
+    color:#0a4099;
+    text-align: center;
+ font-family:'Roboto';
+     margin-left: 2%;
+     margin-right: 2%;
+     margin-bottom: 2%;
+   border-radius: 20px 20px 20px 20px;
+    font-style: normal;
+    font-size:35px;
+    box-shadow: 0px 2px 2.7px 0.3px rgba(0, 0, 0, 0.4);
+}
+.toolbar-title
+{
+  font-family:'Roboto';
+     font-weight:200;
+    font-style: normal;
+    font-size:40px;
+}
+
+.scroll-content
+{
+    padding: 0;
+}
+#frase
+{
+    
+ 
+    text-align:center;
+    font-style: normal;
+    font-size:30px;
+    color:#ffffff;
+    text-align:left;
+    padding: 20px;
+}
+
