@@ -95,7 +95,7 @@ nPizze:['',Validators.compose([Validators.pattern("^[1-9][0-9]*$"),Validators.re
  prenotazioneForm()
 {
    //i dati del cliente sono salvati in data(data della prenotazione,ora, nome, cognome,telefono,uuid)
-    var data=JSON.stringify({data:this.myDate,ora:this.prenotazione.value["ora"],nome:this.prenotazione.value["nome"],cognome:this.prenotazione.value["cognome"],telefono:this.prenotazione.value["telefono"],uuid:this.device.uuid});
+    var data=JSON.stringify({data:this.myDate,ora:this.prenotazione.value["ora"],nome:this.prenotazione.value["nome"],cognome:this.prenotazione.value["cognome"],telefono:this.prenotazione.value["telefono"],uuid:"5073d33d912f8bff"});
     this.http.post("http://ai9tarocchi.altervista.org/prenotazione.php",data
     ).subscribe(
     data=>{
