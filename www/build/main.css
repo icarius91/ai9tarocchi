@@ -27710,3 +27710,7 @@ ion-title {
 ion-navbar {
   opacity: 0.7;
 }
+
+.rigth {
+  text-align: right;
+}
